@@ -39,6 +39,7 @@ header {
     align-items: center;
     padding: 20px 60px;
     background-color: #D9D8D6;
+    margin-bottom: 80px;
 }
 
 .logo img {
@@ -54,7 +55,7 @@ nav ul {
 nav a {
     font-weight: 900;
     font-size: 24px;
-    color: #D99CC5;
+    color: #D9A8C9;
     transition: color 0.3s;
 }
 
@@ -80,12 +81,12 @@ nav a:hover {
 .hero-text {
     font-family: '닉스곤체';
     position: absolute;
-    right: 5%;
+    right: 65%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
     font-weight: 0;
-    color: ##010D01;
+    color: #010D01;
     line-height: 150%;
 }
 
@@ -99,7 +100,7 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
-    color: #010D01;
+    color: #6B6661;
     font-weight: 700;
 }
 
@@ -108,7 +109,7 @@ nav a:hover {
     max-width: 800px;
     margin: 0 auto 60px;
     font-size: 15px;
-    color: #A69F97;
+    color: ##A69F97;
     line-height: 1.8;
 }
 
@@ -130,7 +131,7 @@ nav a:hover {
 .about-card h3 {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #333;
+    color: #6B6661;
     font-weight: 600;
 }
 
@@ -142,7 +143,7 @@ nav a:hover {
 
 .about-card li {
     font-size: 14px;
-    color: #666;
+    color: ##A69F97;
     padding-left: 12px;
     position: relative;
 }
@@ -151,7 +152,7 @@ nav a:hover {
     content: "•";
     position: absolute;
     left: 0;
-    color: #3d5a4c;
+    color: #A69F97;
 }
 
 /* Project Section */
@@ -164,7 +165,7 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: #010D01;
+    color: #6B6661;
     font-weight: 700;
 }
 
@@ -185,6 +186,7 @@ nav a:hover {
     min-height: 550px;
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .project-item figure:hover {
@@ -203,7 +205,7 @@ nav a:hover {
     padding: 20px;
     text-align: center;
     font-size: 15px;
-    color: #666;
+    color: #6B6661;
     background-color: #fff;
     flex-shrink: 0;
 }
@@ -218,15 +220,15 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
-    color: #384538;
+    color: #6B6661;
     font-weight: 700;
     
 }
 
 .contact-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
     gap: 100px;
@@ -237,7 +239,7 @@ nav a:hover {
 .contact-item h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #333;
+    color: #6B6661;
     font-weight: 600;
 }
 
@@ -249,7 +251,7 @@ nav a:hover {
 
 .contact-item li {
     font-size: 14px;
-    color: #666;
+    color: ;
     padding-left: 12px;
     position: relative;
 }
@@ -258,16 +260,34 @@ nav a:hover {
     content: "•";
     position: absolute;
     left: 0;
-    color: #3d5a4c;
+    color: #6B6661;
 }
 
 .contact-item a {
-    color: #3d5a4c;
+    color: #6B6661;
     transition: opacity 0.3s;
 }
 
 .contact-item a:hover {
     opacity: 0.7;
+}
+
+.바로가기 {
+    background-color: #D99CC5;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+}
+
+.바로가기:hover{
+    color: #A69F97;
+    background-color: #ffdef4;
+    cursor: pointer;
 }
 
 /* Footer */
