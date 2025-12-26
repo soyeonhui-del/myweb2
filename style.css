@@ -1,4 +1,9 @@
 /* Reset & Base Styles */
+@font-face {
+    font-family: '닉스곤체';
+    src: url(NIXGONFONTS\ B\ 2.0.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #F6F8F6;
+    background-color: #F5F5F5;
 }
 
 a {
@@ -33,11 +38,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: #E6EDE6;
+    background-color: #D9D8D6;
 }
 
 .logo img {
-    border-radius: 50%;
     padding: 10px;
 }
 
@@ -50,12 +54,12 @@ nav ul {
 nav a {
     font-weight: 900;
     font-size: 24px;
-    color: #6E8B71;
+    color: #D99CC5;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #3d5a4c;
+    color: #ffdef4;
 }
 
 /* Hero Section */
@@ -64,7 +68,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 0px 60px;
-    background-color: #f5f3ed;
+    background-color: #F5F5F5;
     position: relative;
 }
 
@@ -74,27 +78,28 @@ nav a:hover {
 }
 
 .hero-text {
+    font-family: '닉스곤체';
     position: absolute;
-    right: 25%;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
-    font-weight: 900;
-    color: #384538;
-    line-height: 1;
+    font-weight: 0;
+    color: ##010D01;
+    line-height: 150%;
 }
 
 /* About Section */
 .about {
     padding: 80px 60px;
-    background-color: #f5f3ed;
+    background-color: #F5F5F5;
 }
 
 .about h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
-    color: #384538;
+    color: #010D01;
     font-weight: 700;
 }
 
@@ -103,13 +108,13 @@ nav a:hover {
     max-width: 800px;
     margin: 0 auto 60px;
     font-size: 15px;
-    color: #666;
+    color: #A69F97;
     line-height: 1.8;
 }
 
 .about-details {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -152,14 +157,14 @@ nav a:hover {
 /* Project Section */
 .project {
     padding: 80px 60px;
-    background-color: #f5f3ed;
+    background-color: #F5F5F5;
 }
 
 .project h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: #384538;
+    color: #010D01;
     font-weight: 700;
 }
 
@@ -177,6 +182,9 @@ nav a:hover {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-item figure:hover {
@@ -185,8 +193,10 @@ nav a:hover {
 
 .project-item img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    flex-grow: 1;
+    display: block;
+    object-fit: contain;
+    background-color: #ffffff;
 }
 
 .project-item figcaption {
@@ -195,12 +205,13 @@ nav a:hover {
     font-size: 15px;
     color: #666;
     background-color: #fff;
+    flex-shrink: 0;
 }
 
 /* Contact Section */
 .contact {
     padding: 80px 60px;
-    background-color: #f5f3ed;
+    background-color: #F5F5F5;
 }
 
 .contact h2 {
@@ -261,7 +272,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #3d5a4c;
+    background-color: #D9D8D6;
     color: rgba(255, 255, 255, 0.6);
     text-align: left;
     padding: 30px 60px;
